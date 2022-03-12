@@ -1,0 +1,25 @@
+{{#if alert}}
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    {{alert}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+{{/if}}
+
+<form class="row g-3 needs-validation" method="POST" action="/userlogin" novalidate>
+  <div class="col-6">
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingInput" placeholder="example@gmail.com" name="email" value={{this.email}}>
+      <label for="floatingInput">Email</label>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="floatingInput" placeholder="enter your password" name="password" value={{this.password}} >
+      <label for="floatingInput">Password</label>
+    </div>
+  </div>
+  <div class="col-12 d-grid">
+    <button class="btn btn-primary" type="submit">login</button>
+  </div>
+  <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="/usersignup" style="color: #393f81;">Register here</a></p>
+</form>

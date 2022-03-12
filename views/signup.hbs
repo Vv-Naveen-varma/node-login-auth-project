@@ -1,0 +1,43 @@
+{{#if alert}}
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    {{alert}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+{{/if}}
+
+<form class="row g-3 needs-validation" method="POST" action="/usersignup" novalidate>
+  <div class="col-6">
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="floatingInput" placeholder="Enter you First Name" name="fname" value="ram">
+      <label for="floatingInput">First Name</label>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="floatingInput" placeholder="Enter you Last Name" name="lname" value="kumar">
+      <label for="floatingInput">Last Name</label>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="form-floating mb-3">
+      <input type="tel" class="form-control" id="floatingInput" placeholder="Enter Your Phone Number" name="phone" value="0123456789">
+      <label for="floatingInput">Phone</label>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingInput" placeholder="email@email.com" name="email" value="ram@gmail.com">
+      <label for="floatingInput">Email</label>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="floatingInput" placeholder="enter your password" name="password" value="123">
+      <label for="floatingInput">Password</label>
+    </div>
+  </div>
+  <div class="col-12 d-grid">
+    <button class="btn btn-primary" type="submit">SignUp</button>
+  </div>
+  <p class="mb-5 pb-lg-2" style="color: #393f81;">Already have an account? <a href="/userlogin" style="color: #393f81;">Login here</a></p>
+</form>
