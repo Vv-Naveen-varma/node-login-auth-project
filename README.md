@@ -1,2 +1,7 @@
 # node-login-auth-project
-A login page implemented with nodejs, express, MYSQL and phpmyadmin for mysql interaction
+
+For practice, 
+
+> Using nodejs, express, mysqlm html, bootstrap
+> I have developed an app to understand a basic authentication using user-id and password by interacting with mysql DB.
+
